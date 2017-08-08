@@ -1,7 +1,28 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='PayPal Donation')
+    meta(name='author', content='Krister Johansson <krister.johansson86@outlook.com>')
+    link(rel='icon', href='favicon.ico')
+    block head
+      title PayPal Donation
+    //link(href='stylesheets/app.css', rel='stylesheet')
+    
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
-    block content
+    .container
+      block container
+      
+    // /.container
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    block scripts
+      //script(src='javascripts/assets.js')
